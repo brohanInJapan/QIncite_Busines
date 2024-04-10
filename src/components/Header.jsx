@@ -4,56 +4,59 @@ const navList = [
     id: "00",
     name: "home",
     text: "Home",
-    url: ""
+    url: "",
   },
   {
     id: "01",
     name: "about",
     text: "About Us",
-    url: ""
+    url: "",
   },
   {
     id: "03",
     name: "services",
     text: "Our Services",
-    url: ""
+    url: "",
   },
   {
     id: "04",
     name: "cta",
     text: "Get a Quote",
-    url: ""
+    url: "",
   },
-]
+];
 
 const socialLinks = [
   {
     id: "sm00",
     name: "X",
     icon: "",
-    url: ""
+    url: "",
   },
   {
     id: "sm01",
     name: "Facebook",
     icon: "",
-    url: ""
+    url: "",
   },
   {
     id: "sm02",
     name: "LinkedIn",
     icon: "",
-    url: ""
+    url: "",
   },
-]
+];
 
 function Header() {
   return (
     <div className="header">
-      <div className="header-container">
-        <img src="./QIncite_Business/src/assets/QIncite_logo.png" alt="QIncite Business" />
-        <Nav/>
-        <Social/>
+      <div className="container">
+        <img
+          src="../QIncite_Business/src/assets/QIncite_logo.png"
+          alt="QIncite Business"
+        />
+        <Nav />
+        <Social />
       </div>
     </div>
   );
@@ -65,16 +68,14 @@ function Nav() {
   return (
     <ul>
       {navLinks.map((navLink) => (
-        <NavLink navLink={navLink} key={navLink.id}/>
+        <NavLink navLink={navLink} key={navLink.id} />
       ))}
     </ul>
-  )
+  );
 }
 
-function NavLink({navLink}) {
-  return (
-    <button>{navLink.text}</button>
-  )
+function NavLink({ navLink }) {
+  return <button>{navLink.text}</button>;
 }
 
 function Social() {
@@ -83,10 +84,10 @@ function Social() {
   return (
     <ul>
       {smLinks.map((smLink) => (
-        <img src={smLink.icon} alt={smLink.name} key={smLink.id}/>
+        <img src={smLink.icon} alt={smLink.name} key={smLink.id} />
       ))}
     </ul>
-  )
+  );
 }
 
 export default Header;
