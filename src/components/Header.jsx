@@ -53,7 +53,7 @@ function Header() {
       <div className="header-container">
         <img src="./QIncite_Business/src/assets/QIncite_logo.png" alt="QIncite Business" />
         <Nav/>
-        <div className="social-nav"></div>
+        <Social/>
       </div>
     </div>
   );
@@ -74,6 +74,18 @@ function Nav() {
 function NavLink({navLink}) {
   return (
     <button>{navLink.text}</button>
+  )
+}
+
+function Social() {
+  const smLinks = socialLinks;
+
+  return (
+    <ul>
+      {smLinks.map((smLink) => (
+        <img src={smLink.icon} alt={smLink.name} key={smLink.id}/>
+      ))}
+    </ul>
   )
 }
 
