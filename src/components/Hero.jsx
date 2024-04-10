@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-function Hero({ children, img }) {
+function Hero({ children, img, element }) {
   return (
     <section
       className="hero"
@@ -8,6 +8,7 @@ function Hero({ children, img }) {
         url(${img}) no-repeat center center`,
       }}
     >
+      {element ? <img src={element} alt="" className="element" /> : <></>}
       <div className="container">
         <div className="content">{children}</div>
       </div>

@@ -17,9 +17,12 @@
   --fs-500: 1.2rem;
   --fs-600: 2rem;
   --fs-800: 3rem;
+  --fs-d: 10rem;
 
+  --gap-200: 1rem;
   --gap-400: 1.6rem;
   --gap-600: 2.4rem;
+  --gap-800: 10rem;
 
   --inner-clamp: 1664px;
 
@@ -58,6 +61,7 @@ h2 {
   min-height: 7.5rem;
 
   position: fixed;
+  overflow: hidden;
   z-index: 9;
 
   display: flex;
@@ -85,6 +89,7 @@ h2 {
   min-height: 36rem;
 
   position: relative;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -155,6 +160,51 @@ h2 {
     margin-top: var(--gap-600);
     > * + * {
       margin-bottom: var(--gap-400);
+    }
+
+    & p:first-of-type {
+      color: var(--accent-400);
+      font-weight: 600;
+    }
+  }
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background-color: var(--primary-400);
+
+  & .container {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 12rem;
+
+    padding-inline: 256px;
+    padding-block: var(--gap-600);
+
+    & .quotemark {
+      position: absolute;
+      top: -3rem;
+      left: var(--gap-800);
+
+      font-size: var(--fs-d);
+
+      color: var(--accent-400);
+    }
+
+    & p {
+      color: var(--neutral-400);
+
+      font-size: var(--fs-600);
     }
   }
 }
