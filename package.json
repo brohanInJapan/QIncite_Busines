@@ -2,7 +2,7 @@
   "name": "incite",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://brohaninjapan.github.io/QIncite_Busines/",
+  "homepage": "https://brohaninjapan.github.io/QIncite_Business/",
   "type": "module",
   "scripts": {
     "dev": "vite",
