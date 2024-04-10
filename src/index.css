@@ -18,7 +18,8 @@
   --fs-600: 2rem;
   --fs-800: 3rem;
 
-  --gap-400: 2rem;
+  --gap-400: 1.6rem;
+  --gap-600: 2.4rem;
 
   --inner-clamp: 1664px;
 
@@ -36,6 +37,12 @@
 
 h1 {
   font-size: var(--fs-800);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: var(--fs-600);
+  font-weight: 200;
   line-height: 1.2;
 }
 
@@ -93,6 +100,8 @@ h1 {
   & p {
     color: var(--neutral-400);
     font-size: var(--fs-500);
+    line-height: 1.1;
+    font-weight: 600;
   }
 
   & .content {
@@ -105,5 +114,47 @@ h1 {
 
   & .content > * + * {
     margin-top: var(--gap-400);
+  }
+}
+
+.info {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding-block: var(--gap-400);
+
+  gap: var(--gap-400);
+
+  & .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap-400);
+
+    & .info-element {
+      min-width: 18rem;
+      height: 20rem;
+
+      margin-bottom: var(--gap-600);
+
+      background-color: var(--accent-400);
+    }
+  }
+
+  & img {
+    height: 20rem;
+
+    margin-top: var(--gap-600);
+  }
+
+  & .content {
+    margin-top: var(--gap-600);
+    > * + * {
+      margin-bottom: var(--gap-400);
+    }
   }
 }
