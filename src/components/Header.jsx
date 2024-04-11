@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 /* eslint-disable react/prop-types */
 const navList = [
   {
@@ -49,7 +51,7 @@ const socialLinks = [
 
 function Header() {
   return (
-    <div className="header">
+    <section className="header">
       <div className="container">
         <img
           src="../QIncite_Business/src/assets/QIncite_logo.png"
@@ -58,7 +60,7 @@ function Header() {
         <Nav />
         <Social />
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -75,7 +77,7 @@ function Nav() {
 }
 
 function NavLink({ navLink }) {
-  return <button>{navLink.text}</button>;
+  return <Button>{navLink.text}</Button>;
 }
 
 function Social() {

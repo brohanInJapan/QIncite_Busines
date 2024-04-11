@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 /* eslint-disable react/prop-types */
 const servicesList = [
   {
@@ -42,7 +44,7 @@ function Services() {
   const services = servicesList;
 
   return (
-    <div className="services">
+    <section className="services">
       <div className="container">
         <h2>Our Services</h2>
         <ul>
@@ -51,7 +53,7 @@ function Services() {
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -62,7 +64,7 @@ function Service({ service }) {
       <div>
         <p>{service.id}</p>
         <h3>{service.title}</h3>
-        <button>Read More</button>
+        <Button>Read More</Button>
       </div>
     </li>
   );

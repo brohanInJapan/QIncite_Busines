@@ -2,12 +2,12 @@
 /* eslint-disable react/prop-types */
 function Quote({ children }) {
   return (
-    <div className="quote">
+    <section className="quote">
       <div className="container">
         <p className="quotemark">"</p>
         <p>{children}</p>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -1,3 +1,5 @@
+import Button from "./components/Button.jsx";
+import ContactArticle from "./components/ContactArticle.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Info from "./components/Info.jsx";
@@ -18,28 +20,31 @@ function App() {
           expertise to help businesses thrive by optimizing their human capital
           potential and in turn improve your business objectives
         </p>
-        <button>Contact us</button>
+        <Button>Contact us</Button>
       </Hero>
 
       <Info img={"src/assets/placeholder.jpg"}>
         <p>About us</p>
-        <h2>
-          Empower Orginizations with Innovative HR Strategies and Services
-        </h2>
+        <h2>Incite Business Consultants</h2>
         <p>
-          With a team of seasoned professionals, we bring years of industry
-          expertise to help businesses thrive by optimizing their human capital
-          potential and in turn improve your business objectives
+          Incite Business Consultants is a leading and innovative human
+          resources company committed to empowering organizations with
+          exceptional human resources’ strategies and services. With a team of
+          seasoned professionals, we bring years of industry expertise to help
+          businesses thrive by optimizing their human capital potential and in
+          turn improve your business objectives.
         </p>
-        <button>Contact us</button>
+        <Button>Contact us</Button>
       </Info>
 
       <Quote>
-        TRANSFORMING POTENTIAL INTO PERFORMANCE: EMPOWERING BUSINESSES THROUGH
-        STRATEGIC HR EXCELLENCE.
+        Transforming Potential into Performance: Empowering Businesses Through
+        Strategic HR Ecxellence.
       </Quote>
 
       <Services />
+
+      <ContactArticle img={"src/assets/placeholder2.jpeg"} />
     </>
   );
 }
