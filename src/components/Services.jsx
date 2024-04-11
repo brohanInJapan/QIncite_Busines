@@ -5,7 +5,7 @@ const servicesList = [
   {
     id: "01",
     title: "Employee\n Onboarding",
-    icon: "",
+    icon: "/QIncite_Business/design/Rectangle 13.png",
     url: "",
   },
   {
@@ -60,7 +60,7 @@ function Services() {
 function Service({ service }) {
   return (
     <li className="card-service">
-      <img src={service.img} alt={service.name} />
+      <img src={service.icon} alt={service.name} />
       <div>
         <p>{service.id}</p>
         <h3>{service.title}</h3>

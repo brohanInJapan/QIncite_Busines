@@ -51,7 +51,7 @@ const socialLinks = [
 
 function Header() {
   return (
-    <section className="header">
+    <header className="header">
       <div className="container">
         <img
           src="../QIncite_Business/src/assets/QIncite_logo.png"
@@ -60,7 +60,7 @@ function Header() {
         <Nav />
         <Social />
       </div>
-    </section>
+    </header>
   );
 }
 

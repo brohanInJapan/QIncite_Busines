@@ -7,7 +7,8 @@ function ContactArticle({ img }) {
       className="contact-article"
       style={{
         background: `linear-gradient(to top, rgba(56, 56, 66, 0.8), rgba(69, 70, 95, 0.4)),
-        url(${img}) no-repeat center center`,
+        url(${img}) no-repeat`,
+        backgroundSize: `cover`,
       }}
     >
       <div className="container">

@@ -1,0 +1,22 @@
+{
+  "slides": [
+    {
+      "src": "https://picsum.photos/seed/img1/600/400?grayscale",
+      "alt": "Image 1",
+      "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet odio a dapibus ornare. Aliquam fringilla pellentesque ex, nec semper dolor. Suspendisse tincidunt tristique nulla. ",
+      "client": "John Doe"
+    },
+    {
+      "src": "https://picsum.photos/seed/img2/600/400?grayscale",
+      "alt": "Image 2",
+      "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet odio a dapibus ornare. Aliquam fringilla pellentesque ex, nec semper dolor. Suspendisse tincidunt tristique nulla. ",
+      "client": "John Doe"
+    },
+    {
+      "src": "https://picsum.photos/seed/img3/600/400?grayscale",
+      "alt": "Image 3",
+      "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet odio a dapibus ornare. Aliquam fringilla pellentesque ex, nec semper dolor. Suspendisse tincidunt tristique nulla. ",
+      "client": "John Doe"
+    }
+  ]
+}

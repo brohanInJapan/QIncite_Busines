@@ -5,6 +5,7 @@ import Hero from "./components/Hero.jsx";
 import Info from "./components/Info.jsx";
 import Quote from "./components/Quote.jsx";
 import Services from "./components/Services.jsx";
+import Slideshow from "./components/Slideshow.jsx";
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
       <Services />
 
       <ContactArticle img={"src/assets/placeholder2.jpeg"} />
+
+      <Slideshow />
     </>
   );
 }
