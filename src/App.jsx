@@ -2,6 +2,7 @@ import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Info from "./components/Info.jsx";
 import Quote from "./components/Quote.jsx";
+import Services from "./components/Services.jsx";
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
         TRANSFORMING POTENTIAL INTO PERFORMANCE: EMPOWERING BUSINESSES THROUGH
         STRATEGIC HR EXCELLENCE.
       </Quote>
+
+      <Services />
     </>
   );
 }

@@ -130,9 +130,7 @@ h2 {
   justify-content: center;
   align-items: center;
 
-  padding-block: var(--gap-400);
-
-  gap: var(--gap-400);
+  padding-block: var(--gap-600);
 
   & .container {
     display: flex;
@@ -205,6 +203,60 @@ h2 {
       color: var(--neutral-400);
 
       font-size: var(--fs-600);
+    }
+  }
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding-block: var(--gap-600);
+  margin-block: var(--gap-400);
+
+  background-color: var(--neutral-400);
+
+  & .container > h2 {
+    margin-bottom: var(--gap-400);
+  }
+
+  & ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--gap-400);
+  }
+}
+
+.card-service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: var(--gap-400);
+
+  & img {
+    min-width: 6rem;
+    height: 6rem;
+
+    background-color: var(--primary-400);
+  }
+
+  > div {
+    max-width: 10rem;
+    text-align: start;
+
+    & p {
+      color: var(--accent-400);
+      font-size: var(--fs-600);
+    }
+
+    & h3 {
+      font-size: var(--fs-500);
+      font-weight: 200;
+      text-transform: uppercase;
     }
   }
 }
