@@ -214,7 +214,7 @@ h2 {
   & p {
     color: var(--accent);
     font-size: var(--fs-500);
-    font-weight: 600;
+    font-weight: 400;
   }
 
   & .button {
@@ -307,6 +307,8 @@ h2 {
       color: var(--foreground);
 
       font-size: var(--fs-600);
+      text-transform: uppercase;
+      letter-spacing: var(--ls-400);
     }
 
     & p::after {
@@ -319,7 +321,7 @@ h2 {
       line-height: 10rem;
 
       color: var(--accent);
-      font-size: 20rem;
+      font-size: 16rem;
     }
   }
 }
@@ -400,6 +402,7 @@ h2 {
       font-size: var(--fs-400);
       font-weight: 200;
       text-transform: uppercase;
+      letter-spacing: var(--ls-400);
 
       margin-block: var(--gap-100);
     }
@@ -444,6 +447,8 @@ h2 {
 }
 
 .slide {
+  --accent: var(--accent-400);
+
   width: 100%;
   min-height: 20rem;
 
@@ -459,9 +464,24 @@ h2 {
   padding-inline: var(--gap-600);
 
   & .testimonial {
+    position: relative;
+
     text-transform: uppercase;
     letter-spacing: var(--ls-400);
     text-wrap: balance;
+  }
+
+  & .testimonial::after {
+    content: '"';
+    position: absolute;
+    top: -4rem;
+    left: 6rem;
+
+    display: inline-block;
+    line-height: 10rem;
+
+    color: var(--accent);
+    font-size: 16rem;
   }
 
   & .testimonial-client {
