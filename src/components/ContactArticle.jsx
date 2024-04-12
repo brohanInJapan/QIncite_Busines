@@ -7,7 +7,7 @@ function ContactArticle({ img }) {
     <section
       className="contact-article"
       style={{
-        background: `  linear-gradient(to top, rgba(30, 43, 41, 0.95), rgba(30, 43, 41, 0.95)), center / cover no-repeat url(${img}) `,
+        background: `linear-gradient(to top, rgba(30, 43, 41, 0.95), rgba(30, 43, 41, 0.95)), center / cover no-repeat url(${img}) `,
         backgroundBlendMode: "multiply",
       }}
     >

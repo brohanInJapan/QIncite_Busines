@@ -4,8 +4,8 @@ function Hero({ children, img, element }) {
     <section
       className="hero"
       style={{
-        background: `linear-gradient(to top, rgba(56, 56, 66, 0.9), rgba(69, 70, 95, 0.4)), url(${img}) no-repeat`,
-        backgroundSize: `cover`,
+        background: `linear-gradient(to top, rgba(30, 43, 41, 0.50), rgba(30, 43, 41, 0.50)), bottom / contain no-repeat url("src/assets/vectors/Hero Shape.svg"), center / cover no-repeat url(${img}) `,
+        backgroundBlendMode: "multiply",
       }}
     >
       {element ? <img src={element} alt="" className="element" /> : <></>}

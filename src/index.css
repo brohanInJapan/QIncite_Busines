@@ -186,7 +186,7 @@ h2 {
     & ul {
       display: flex;
       flex-direction: row;
-      gap: var(--gap-200);
+      gap: var(--gap-400);
 
       @media (max-width: 1080px) {
         max-width: min-content;
@@ -405,6 +405,10 @@ h2 {
       letter-spacing: var(--ls-400);
 
       margin-block: var(--gap-100);
+    }
+
+    & .button {
+      width: max-content;
     }
   }
 }
