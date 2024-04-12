@@ -8,7 +8,7 @@ import Quote from "./components/Quote.jsx";
 import Services from "./components/Services.jsx";
 import Slideshow from "./components/Slideshow.jsx";
 
-import HeroShape from "./assets/vectors/Hero Shape.svg";
+import HeroShape from "./assets/vectors/HeroShape.svg";
 import hero from "./assets/images/Asset34.png";
 import info from "./assets/images/Asset35.png";
 import contact from "./assets/images/Asset22.png";
