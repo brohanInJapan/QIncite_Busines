@@ -8,6 +8,7 @@ import Quote from "./components/Quote.jsx";
 import Services from "./components/Services.jsx";
 import Slideshow from "./components/Slideshow.jsx";
 
+import HeroShape from "./assets/vectors/Hero Shape.svg";
 import hero from "./assets/images/Asset34.png";
 import info from "./assets/images/Asset35.png";
 import contact from "./assets/images/Asset22.png";
@@ -17,7 +18,7 @@ function App() {
     <>
       <Header />
 
-      <Hero img={hero}>
+      <Hero img={hero} element={HeroShape}>
         <h1>
           Empower Orginizations with Innovative HR Strategies and Services
         </h1>
