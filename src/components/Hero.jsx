@@ -9,7 +9,12 @@ function Hero({ children, img, element }) {
         backgroundBlendMode: "multiply",
       }}
     >
-      {element ? <img src={element} alt="" className="element" /> : <></>}
+      <div
+        className="element"
+        style={{
+          background: `bottom / contain no-repeat url(${element}) `,
+        }}
+      />
       <div className="container">
         <div className="content">{children}</div>
       </div>

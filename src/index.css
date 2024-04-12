@@ -204,14 +204,18 @@ h2 {
 
   position: relative;
   overflow: hidden;
+  z-index: 0;
 
   padding-top: 9rem;
 
   & .element {
     position: absolute;
+    top: 9rem;
     left: 0;
+    right: 0;
     bottom: 0;
     mix-blend-mode: multiply;
+    z-index: -1;
   }
 
   & h1 {
