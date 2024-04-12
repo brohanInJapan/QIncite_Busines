@@ -24,7 +24,7 @@ function Slide({ slide }) {
     >
       <h2>What others say</h2>
       <p className="testimonial">{slide.testimonial}</p>
-      <p className="testimonial-client">- {slide.client}</p>
+      <span className="testimonial-client">- {slide.client}</span>
     </div>
   );
 }

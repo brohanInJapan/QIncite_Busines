@@ -32,19 +32,19 @@ const socialLinks = [
   {
     id: "sm00",
     name: "X",
-    icon: "",
+    icon: "design/Twitter.png",
     url: "",
   },
   {
     id: "sm01",
     name: "Facebook",
-    icon: "",
+    icon: "design/Facebook.png",
     url: "",
   },
   {
     id: "sm02",
     name: "LinkedIn",
-    icon: "",
+    icon: "design/inkedIn.png",
     url: "",
   },
 ];
@@ -86,7 +86,9 @@ function Social() {
   return (
     <ul>
       {smLinks.map((smLink) => (
-        <img src={smLink.icon} alt={smLink.name} key={smLink.id} />
+        <a href={smLink.url} key={smLink.id}>
+          <img src={smLink.icon} alt={smLink.name} />
+        </a>
       ))}
     </ul>
   );

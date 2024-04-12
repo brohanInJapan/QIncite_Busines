@@ -5,37 +5,37 @@ const servicesList = [
   {
     id: "01",
     title: "Employee\n Onboarding",
-    icon: "/QIncite_Business/design/Rectangle 13.png",
+    icon: "design/Asset 10.png",
     url: "",
   },
   {
     id: "02",
     title: "HR\n Consulting",
-    icon: "",
+    icon: "design/Asset 12.png",
     url: "",
   },
   {
     id: "03",
     title: "Employee\n Relations",
-    icon: "",
+    icon: "design/Asset 14.png",
     url: "",
   },
   {
     id: "04",
     title: "Training and\n Development",
-    icon: "",
+    icon: "design/Asset 11.png",
     url: "",
   },
   {
     id: "05",
     title: "Performance\n Management",
-    icon: "",
+    icon: "design/Asset 13.png",
     url: "",
   },
   {
     id: "06",
     title: "Compliance and\n Legal Support",
-    icon: "",
+    icon: "design/Asset 15.png",
     url: "",
   },
 ];

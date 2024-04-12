@@ -1,5 +1,6 @@
 import Button from "./components/Button.jsx";
 import ContactArticle from "./components/ContactArticle.jsx";
+import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Info from "./components/Info.jsx";
@@ -24,7 +25,7 @@ function App() {
         <Button>Contact us</Button>
       </Hero>
 
-      <Info img={"src/assets/placeholder.jpg"}>
+      <Info img={"src/assets/placeholder2.jpeg"}>
         <p>About us</p>
         <h2>Incite Business Consultants</h2>
         <p>
@@ -48,6 +49,7 @@ function App() {
       <ContactArticle img={"src/assets/placeholder2.jpeg"} />
 
       <Slideshow />
+      <Footer />
     </>
   );
 }
