@@ -1,41 +1,48 @@
 import Button from "./Button";
 
+import serv1 from "../assets/Asset 10.png";
+import serv2 from "../assets/Asset 12.png";
+import serv3 from "../assets/Asset 14.png";
+import serv4 from "../assets/Asset 11.png";
+import serv5 from "../assets/Asset 13.png";
+import serv6 from "../assets/Asset 15.png";
+
 /* eslint-disable react/prop-types */
 const servicesList = [
   {
-    id: "01",
+    id: "serv1",
     title: "Employee\n Onboarding",
-    icon: "public/Asset 10.png",
+    icon: { serv1 },
     url: "",
   },
   {
-    id: "02",
+    id: "serv2",
     title: "HR\n Consulting",
-    icon: "public/Asset 12.png",
+    icon: { serv2 },
     url: "",
   },
   {
-    id: "03",
+    id: "serv3",
     title: "Employee\n Relations",
-    icon: "public/Asset 14.png",
+    icon: { serv3 },
     url: "",
   },
   {
-    id: "04",
+    id: "serv4",
     title: "Training and\n Development",
-    icon: "public/Asset 11.png",
+    icon: { serv4 },
     url: "",
   },
   {
-    id: "05",
+    id: "serv5",
     title: "Performance\n Management",
-    icon: "public/Asset 13.png",
+    icon: { serv5 },
     url: "",
   },
   {
-    id: "06",
+    id: "serv6",
     title: "Compliance and\n Legal Support",
-    icon: "public/Asset 15.png",
+    icon: { serv6 },
     url: "",
   },
 ];
@@ -60,7 +67,7 @@ function Services() {
 function Service({ service }) {
   return (
     <li className="card-service">
-      <img src={service.icon} alt={service.name} />
+      <img src={service.icon[service.id]} alt={service.name} />
       <div>
         <p>{service.id}</p>
         <h3>{service.title}</h3>

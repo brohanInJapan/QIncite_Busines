@@ -8,12 +8,16 @@ import Quote from "./components/Quote.jsx";
 import Services from "./components/Services.jsx";
 import Slideshow from "./components/Slideshow.jsx";
 
+import hero from "./assets/placeholder2.jpeg";
+import info from "./assets/placeholder.jpg";
+import contact from "./assets/placeholder2.jpeg";
+
 function App() {
   return (
     <>
       <Header />
 
-      <Hero img={"public/placeholder2.jpeg"}>
+      <Hero img={hero}>
         <h1>
           Empower Orginizations with Innovative HR Strategies and Services
         </h1>
@@ -25,7 +29,7 @@ function App() {
         <Button>Contact us</Button>
       </Hero>
 
-      <Info img={"public/placeholder.jpg"}>
+      <Info img={info}>
         <p>About us</p>
         <h2>Incite Business Consultants</h2>
         <p>
@@ -46,7 +50,7 @@ function App() {
 
       <Services />
 
-      <ContactArticle img={"public/placeholder2.jpeg"} />
+      <ContactArticle img={contact} />
 
       <Slideshow />
       <Footer />

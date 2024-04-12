@@ -1,6 +1,11 @@
+/* eslint-disable react/prop-types */
 import Button from "./Button";
 
-/* eslint-disable react/prop-types */
+import logo from "../assets/QIncite_logo.png";
+import x from "../assets/Twitter.png";
+import fb from "../assets/Facebook.png";
+import ln from "../assets/inkedIn.png";
+
 const navList = [
   {
     id: "00",
@@ -30,21 +35,21 @@ const navList = [
 
 const socialLinks = [
   {
-    id: "sm00",
+    id: "x",
     name: "X",
-    icon: "public/Twitter.png",
+    icon: { x },
     url: "#X",
   },
   {
-    id: "sm01",
+    id: "fb",
     name: "Facebook",
-    icon: "public/Facebook.png",
+    icon: { fb },
     url: "#Facebook",
   },
   {
-    id: "sm02",
+    id: "ln",
     name: "LinkedIn",
-    icon: "public/inkedIn.png",
+    icon: { ln },
     url: "#LinkedIn",
   },
 ];
@@ -53,7 +58,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <img src="public/QIncite_logo.png" alt="QIncite Business" />
+        <img src={logo} alt="QIncite Business" />
         <Nav />
         <Social />
       </div>
@@ -84,7 +89,7 @@ function Social() {
     <ul>
       {smLinks.map((smLink) => (
         <a href={smLink.url} key={smLink.id}>
-          <img src={smLink.icon} alt={smLink.name} />
+          <img src={smLink.icon[smLink.id]} alt={smLink.name} />
         </a>
       ))}
     </ul>

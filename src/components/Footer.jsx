@@ -1,22 +1,20 @@
 /* eslint-disable react/prop-types */
+import logo from "../assets/QIncite_logo.png";
+import email from "../assets/Contact Email.png";
+import number from "../assets/Contact Numer.png";
+
 function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <img src="public/QIncite_logo.png" alt="QIncite Business" />
+        <img src={logo} alt="QIncite Business" />
         <div className="content">
           <div className="contact">
-            <ContactInfo
-              icon={"public/Contact Email.png"}
-              alt={"info email address"}
-            >
+            <ContactInfo icon={email} alt={"info email address"}>
               info@qincite.mail
             </ContactInfo>
 
-            <ContactInfo
-              icon={"public/Contact Numer.png"}
-              alt={"contact number"}
-            >
+            <ContactInfo icon={number} alt={"contact number"}>
               071 234 5678
             </ContactInfo>
           </div>

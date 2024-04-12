@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import ContactFrom from "./ContactFrom";
 
+import logo from "../assets/White Logo.png";
+
 function ContactArticle({ img }) {
   return (
     <section
@@ -25,7 +27,7 @@ function ContactArticle({ img }) {
             eveniet, ullam, aliquam libero soluta corporis vitae similique iste
             perferendis dolorem quis eius voluptas omnis temporibus doloremque
           </p>
-          <img src="public/White Logo.png" alt="QIncite Business" />
+          <img src={logo} alt="QIncite Business" />
         </div>
       </div>
     </section>
