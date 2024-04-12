@@ -3,21 +3,18 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <img
-          src="../QIncite_Business/src/assets/QIncite_logo.png"
-          alt="QIncite Business"
-        />
+        <img src="public/QIncite_logo.png" alt="QIncite Business" />
         <div className="content">
           <div className="contact">
             <ContactInfo
-              icon={"design/Contact Email.png"}
+              icon={"public/Contact Email.png"}
               alt={"info email address"}
             >
               info@qincite.mail
             </ContactInfo>
 
             <ContactInfo
-              icon={"design/Contact Numer.png"}
+              icon={"public/Contact Numer.png"}
               alt={"contact number"}
             >
               071 234 5678

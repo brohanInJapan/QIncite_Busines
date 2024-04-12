@@ -13,7 +13,7 @@ function App() {
     <>
       <Header />
 
-      <Hero img={"src/assets/placeholder2.jpeg"}>
+      <Hero img={"public/placeholder2.jpeg"}>
         <h1>
           Empower Orginizations with Innovative HR Strategies and Services
         </h1>
@@ -25,7 +25,7 @@ function App() {
         <Button>Contact us</Button>
       </Hero>
 
-      <Info img={"src/assets/placeholder2.jpeg"}>
+      <Info img={"public/placeholder.jpg"}>
         <p>About us</p>
         <h2>Incite Business Consultants</h2>
         <p>
@@ -46,7 +46,7 @@ function App() {
 
       <Services />
 
-      <ContactArticle img={"src/assets/placeholder2.jpeg"} />
+      <ContactArticle img={"public/placeholder2.jpeg"} />
 
       <Slideshow />
       <Footer />

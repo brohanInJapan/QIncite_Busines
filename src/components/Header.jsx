@@ -32,20 +32,20 @@ const socialLinks = [
   {
     id: "sm00",
     name: "X",
-    icon: "design/Twitter.png",
-    url: "",
+    icon: "public/Twitter.png",
+    url: "#X",
   },
   {
     id: "sm01",
     name: "Facebook",
-    icon: "design/Facebook.png",
-    url: "",
+    icon: "public/Facebook.png",
+    url: "#Facebook",
   },
   {
     id: "sm02",
     name: "LinkedIn",
-    icon: "design/inkedIn.png",
-    url: "",
+    icon: "public/inkedIn.png",
+    url: "#LinkedIn",
   },
 ];
 
@@ -53,10 +53,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <img
-          src="../QIncite_Business/src/assets/QIncite_logo.png"
-          alt="QIncite Business"
-        />
+        <img src="public/QIncite_logo.png" alt="QIncite Business" />
         <Nav />
         <Social />
       </div>

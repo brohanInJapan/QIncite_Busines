@@ -5,37 +5,37 @@ const servicesList = [
   {
     id: "01",
     title: "Employee\n Onboarding",
-    icon: "design/Asset 10.png",
+    icon: "public/Asset 10.png",
     url: "",
   },
   {
     id: "02",
     title: "HR\n Consulting",
-    icon: "design/Asset 12.png",
+    icon: "public/Asset 12.png",
     url: "",
   },
   {
     id: "03",
     title: "Employee\n Relations",
-    icon: "design/Asset 14.png",
+    icon: "public/Asset 14.png",
     url: "",
   },
   {
     id: "04",
     title: "Training and\n Development",
-    icon: "design/Asset 11.png",
+    icon: "public/Asset 11.png",
     url: "",
   },
   {
     id: "05",
     title: "Performance\n Management",
-    icon: "design/Asset 13.png",
+    icon: "public/Asset 13.png",
     url: "",
   },
   {
     id: "06",
     title: "Compliance and\n Legal Support",
-    icon: "design/Asset 15.png",
+    icon: "public/Asset 15.png",
     url: "",
   },
 ];

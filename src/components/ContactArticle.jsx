@@ -25,7 +25,7 @@ function ContactArticle({ img }) {
             eveniet, ullam, aliquam libero soluta corporis vitae similique iste
             perferendis dolorem quis eius voluptas omnis temporibus doloremque
           </p>
-          <img src="design/White Logo.png" alt="QIncite Business" />
+          <img src="public/White Logo.png" alt="QIncite Business" />
         </div>
       </div>
     </section>
