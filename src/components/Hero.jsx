@@ -12,7 +12,7 @@ function Hero({ children, img, element }) {
       <div
         className="element"
         style={{
-          background: `bottom / contain no-repeat url(${element}) `,
+          background: `linear-gradient(to top, rgba(30, 43, 41, 0.01), rgba(30, 43, 41, 0.01)), bottom / contain no-repeat url(${element}) `,
         }}
       />
       <div className="container">
