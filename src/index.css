@@ -207,6 +207,13 @@ h2 {
 
   padding-top: 9rem;
 
+  & .element {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+  }
+
   & h1 {
     color: var(--background);
   }
