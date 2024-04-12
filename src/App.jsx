@@ -18,7 +18,7 @@ function App() {
     <>
       <Header />
 
-      <Hero img={hero}>
+      <Hero img={hero} element={HeroShape}>
         <h1>
           Empower Orginizations with Innovative HR Strategies and Services
         </h1>
