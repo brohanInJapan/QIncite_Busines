@@ -1,20 +1,20 @@
 /* eslint-disable react/prop-types */
-import logo from "../assets/QIncite_logo.png";
-import email from "../assets/Contact Email.png";
-import number from "../assets/Contact Numer.png";
+import Logo from "../assets/logo/Logo.jsx";
+import EmailIcon from "../assets/vectors/EmailIcon.jsx";
+import PhoneIcon from "../assets/vectors/PhoneIcon.jsx";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <img src={logo} alt="QIncite Business" />
+        <Logo />
         <div className="content">
           <div className="contact">
-            <ContactInfo icon={email} alt={"info email address"}>
+            <ContactInfo icon={<EmailIcon />} alt={"info email address"}>
               info@qincite.mail
             </ContactInfo>
 
-            <ContactInfo icon={number} alt={"contact number"}>
+            <ContactInfo icon={<PhoneIcon />} alt={"contact number"}>
               071 234 5678
             </ContactInfo>
           </div>
@@ -30,10 +30,10 @@ function Footer() {
   );
 }
 
-function ContactInfo({ children, icon, alt }) {
+function ContactInfo({ children, icon }) {
   return (
     <div className="contact-info">
-      <img src={icon} alt={alt} width={"24px"} height={"24px"} />
+      {icon}
       <span>{children}</span>
     </div>
   );

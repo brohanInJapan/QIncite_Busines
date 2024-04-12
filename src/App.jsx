@@ -8,9 +8,9 @@ import Quote from "./components/Quote.jsx";
 import Services from "./components/Services.jsx";
 import Slideshow from "./components/Slideshow.jsx";
 
-import hero from "./assets/placeholder2.jpeg";
-import info from "./assets/placeholder.jpg";
-import contact from "./assets/placeholder2.jpeg";
+import hero from "./assets/images/Asset34.png";
+import info from "./assets/images/Asset35.png";
+import contact from "./assets/images/Asset22.png";
 
 function App() {
   return (

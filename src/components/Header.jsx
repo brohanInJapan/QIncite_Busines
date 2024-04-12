@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import Button from "./Button";
 
-import logo from "../assets/QIncite_logo.png";
-import x from "../assets/Twitter.png";
-import fb from "../assets/Facebook.png";
-import ln from "../assets/inkedIn.png";
+import Logo from "../assets/logo/Logo";
+import TwitterIcon from "../assets/vectors/TwitterIcon";
+import FacebookIcon from "../assets/vectors/FacebookIcon";
+import LinkedInIcon from "../assets/vectors/LinkedInIcon";
 
 const navList = [
   {
@@ -36,21 +36,21 @@ const navList = [
 const socialLinks = [
   {
     id: "x",
-    name: "X",
-    icon: { x },
+    icon: <TwitterIcon />,
     url: "#X",
+    size: "32px",
   },
   {
     id: "fb",
-    name: "Facebook",
-    icon: { fb },
+    icon: <FacebookIcon />,
     url: "#Facebook",
+    size: "32px",
   },
   {
     id: "ln",
-    name: "LinkedIn",
-    icon: { ln },
+    icon: <LinkedInIcon />,
     url: "#LinkedIn",
+    size: "32px",
   },
 ];
 
@@ -58,7 +58,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <img src={logo} alt="QIncite Business" />
+        <Logo className="logo" />
         <Nav />
         <Social />
       </div>
@@ -88,8 +88,8 @@ function Social() {
   return (
     <ul>
       {smLinks.map((smLink) => (
-        <a href={smLink.url} key={smLink.id}>
-          <img src={smLink.icon[smLink.id]} alt={smLink.name} />
+        <a href={smLink.url} key={smLink.id} className="social-links">
+          {smLink.icon}
         </a>
       ))}
     </ul>

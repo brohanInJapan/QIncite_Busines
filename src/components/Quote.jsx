@@ -4,7 +4,6 @@ function Quote({ children }) {
   return (
     <section className="quote">
       <div className="container">
-        <p className="quotemark">"</p>
         <p>{children}</p>
       </div>
     </section>

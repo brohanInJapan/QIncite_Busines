@@ -1,16 +1,13 @@
 /* eslint-disable react/prop-types */
 import ContactFrom from "./ContactFrom";
-
-import logo from "../assets/White Logo.png";
+import Logo from "../assets/logo/Logo.jsx";
 
 function ContactArticle({ img }) {
   return (
     <section
       className="contact-article"
       style={{
-        background: `linear-gradient(to top, rgba(56, 56, 66, 0.8), rgba(69, 70, 95, 0.4)),
-        url(${img}) no-repeat`,
-        backgroundSize: `cover`,
+        background: `  linear-gradient(to top, rgba(30, 43, 41, 0.9), rgba(30, 43, 41, 0.9)), center / cover no-repeat url(${img}) `,
       }}
     >
       <div className="container">
@@ -27,7 +24,7 @@ function ContactArticle({ img }) {
             eveniet, ullam, aliquam libero soluta corporis vitae similique iste
             perferendis dolorem quis eius voluptas omnis temporibus doloremque
           </p>
-          <img src={logo} alt="QIncite Business" />
+          <Logo />
         </div>
       </div>
     </section>

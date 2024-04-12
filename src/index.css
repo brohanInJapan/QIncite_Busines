@@ -161,6 +161,9 @@ h2 {
 }
 
 .header {
+  --foreground: var(--primary-400);
+  --background: var(--accent-400);
+
   width: 100%;
   min-height: 7.5rem;
 
@@ -172,7 +175,7 @@ h2 {
   justify-content: center;
   align-items: center;
 
-  background-color: var(--accent-400);
+  background-color: var(--background);
 
   & .container {
     display: flex;
@@ -193,6 +196,10 @@ h2 {
 }
 
 .hero {
+  --foreground: var(--primary-400);
+  --background: var(--accent-400);
+  --accent: var(--neutral-400);
+
   min-height: 36rem;
 
   position: relative;
@@ -201,25 +208,25 @@ h2 {
   padding-top: 9rem;
 
   & h1 {
-    color: var(--accent-400);
+    color: var(--background);
   }
 
   & p {
-    color: var(--neutral-400);
+    color: var(--accent);
     font-size: var(--fs-500);
     font-weight: 600;
   }
 
   & .button {
-    color: var(--neutral-400);
+    color: var(--accent);
   }
 
   & .button:hover,
   .button:focus {
-    border: 2px solid var(--neutral-400);
+    border: 2px solid var(--accent);
   }
   & .button:active {
-    border: 2px solid var(--primary-400);
+    border: 2px solid var(--foreground);
   }
 
   & .content {
@@ -236,6 +243,10 @@ h2 {
 }
 
 .info {
+  --foreground: var(--primary-400);
+  --background: var(--neutral-400);
+  --accent: var(--accent-400);
+
   & .container {
     display: flex;
     flex-direction: row;
@@ -255,22 +266,28 @@ h2 {
 
     & .info-element {
       margin-bottom: var(--gap-600);
-      background-color: var(--accent-400);
+      background-color: var(--accent);
     }
   }
 
   & img {
     width: 100%;
-    height: 100%;
-    margin-top: var(--gap-600);
+    max-height: 20rem;
+
     object-fit: cover;
+
+    margin-top: var(--gap-600);
   }
 }
 
 .quote {
+  --foreground: var(--neutral-400);
+  --background: var(--primary-400);
+  --accent: var(--accent-400);
+
   text-align: center;
 
-  background-color: var(--primary-400);
+  background-color: var(--background);
 
   & .container {
     position: relative;
@@ -285,30 +302,38 @@ h2 {
     padding-inline: 256px;
     padding-block: var(--gap-600);
 
-    & .quotemark {
-      position: absolute;
-      top: -3rem;
-      left: var(--gap-800);
-
-      font-size: var(--fs-d);
-
-      color: var(--accent-400);
-    }
-
     & p {
-      color: var(--neutral-400);
+      position: relative;
+      color: var(--foreground);
 
       font-size: var(--fs-600);
+    }
+
+    & p::after {
+      content: '"';
+      position: absolute;
+      top: 0;
+      left: -8rem;
+
+      display: inline-block;
+      line-height: 10rem;
+
+      color: var(--accent);
+      font-size: 20rem;
     }
   }
 }
 
 .services {
+  --foreground: var(--primary-400);
+  --background: var(--neutral-400);
+
   text-align: center;
+
   padding-block: var(--gap-600);
   margin-block: var(--gap-400);
 
-  background-color: var(--neutral-400);
+  background-color: var(--background);
 
   & .container {
     display: grid;
@@ -338,19 +363,24 @@ h2 {
 }
 
 .card-service {
+  --foreground: var(--accent-400);
+  --background: var(--primary-400);
+
   width: min-content;
 
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  gap: var(--gap-400);
+  gap: var(--gap-200);
 
-  & img {
-    min-width: 6rem;
-    height: 6rem;
+  & .icon-background {
+    min-width: 8rem;
+    height: 8rem;
 
-    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background-color: var(--primary-400);
   }
@@ -361,23 +391,29 @@ h2 {
     text-align: start;
 
     & p {
-      color: var(--accent-400);
+      color: var(--foreground);
       font-size: var(--fs-600);
     }
 
     & h3 {
       min-width: fit-content;
-      font-size: var(--fs-500);
+      font-size: var(--fs-400);
       font-weight: 200;
       text-transform: uppercase;
+
+      margin-block: var(--gap-100);
     }
   }
 }
 
 .contact-article {
-  color: var(--neutral-400);
+  --foreground: var(--neutral-400);
+
+  color: var(--foreground);
 
   padding-block: var(--gap-800);
+
+  background-size: cover;
 
   & .container {
     display: grid;
@@ -398,7 +434,7 @@ h2 {
   & input,
   textarea,
   button {
-    color: var(--neutral-400);
+    color: var(--foreground);
   }
 }
 
@@ -434,7 +470,11 @@ h2 {
 }
 
 .footer {
-  background-color: var(--accent-400);
+  --foreground: var(--primary-400);
+  --background: var(--accent-400);
+  --accent: var(--neutral-400);
+
+  background-color: var(--background);
 
   & .container {
     display: flex;
@@ -451,7 +491,7 @@ h2 {
 
       padding-bottom: var(--gap-200);
 
-      border-bottom: 2px solid var(--neutral-400);
+      border-bottom: 2px solid var(--accent);
 
       @media (max-width: 1080px) {
         grid-template-columns: 1fr;
@@ -468,6 +508,8 @@ h2 {
         }
 
         & .contact-info {
+          --foreground: var(--neutral-400);
+
           display: flex;
           align-items: center;
           gap: var(--gap-200);
